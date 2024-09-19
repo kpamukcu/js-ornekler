@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url(./img/foto.jpeg);
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container{
+                display: flex;
+                row-gap: 30px;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                width: 500px;
+                background-color: rgba(255, 255, 255, .9);
+                padding:50px 80px;
+                border-radius: 30px;
+                border:2px solid red;
+            }
+
+            .boxlar{
+                display: flex;
+                column-gap: 30px;
+            }
+            .mb-1{
+                margin-bottom: 10px;
+            }
+
+            #pcButon{
+                background-color: gold;
+                padding: 12px 20px;
+                border:none;
+                border-radius:10px;
+                cursor: pointer;
+            }
+
+            #seninButon{
+                background-color: rgb(154, 154, 255);
+                padding: 12px 20px;
+                border:none;
+                border-radius:10px;
+                cursor: pointer;
+            }
+
+            #yeniOyun{
+                background-color: red;
+                padding: 12px 20px;
+                border:none;
+                border-radius:10px;
+                color:#fff;
+                cursor: pointer;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="boxlar">
+                <div class="box">
+                    <div class="mb-1">
+                        <img src="img/zar.png" id="pcZar1">
+                        <img src="img/zar.png" id="pcZar2">
+                    </div>
+                    <button onclick="pcZar()" id="pcButon">Pc Zar Atsın</button>
+                </div>
+                <div class="box">
+                    <div class="mb-1">
+                        <img src="img/zar.png" id="seninZar1">
+                        <img src="img/zar.png" id="seninZar2">
+                    </div>
+                    <button onclick="seninZar()" id="seninButon">Sen Zar At</button>
+                </div>
+            </div>
+            <button onclick="yeniOyun()" id="yeniOyun">Yeni Oyun ???</button>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
